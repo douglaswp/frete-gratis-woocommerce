@@ -1,3 +1,5 @@
+<?php
+
 // Zerar preço do PAC quando compra receber frete gratuito (Por produto ou Total da Compra)
 function custom_woocommerce_correios_shipping_methods( $rate ) {
 
@@ -26,3 +28,5 @@ function custom_woocommerce_correios_shipping_methods( $rate ) {
 	return $rate;
 }
 add_filter( 'woocommerce_correios_correios-pac_rate', 'custom_woocommerce_correios_shipping_methods' );
+
+?>
